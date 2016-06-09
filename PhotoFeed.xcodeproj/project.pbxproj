@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D58DA341D0A278D00335B34 /* ImageFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D58DA331D0A278D00335B34 /* ImageFeedTableViewController.swift */; };
+		3D58DA361D0A2E8C00335B34 /* ImageFeedItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D58DA351D0A2E8C00335B34 /* ImageFeedItemTableViewCell.swift */; };
 		3DDBFD8C1D07E3C300E31EEF /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3DDBFD8B1D07E3C300E31EEF /* Settings.bundle */; };
 		3DF95EA71CDC422B00EFAE10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF95EA61CDC422B00EFAE10 /* AppDelegate.swift */; };
 		3DF95EA91CDC422B00EFAE10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF95EA81CDC422B00EFAE10 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		3D58DA331D0A278D00335B34 /* ImageFeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFeedTableViewController.swift; sourceTree = "<group>"; };
+		3D58DA351D0A2E8C00335B34 /* ImageFeedItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFeedItemTableViewCell.swift; sourceTree = "<group>"; };
 		3DDBFD8B1D07E3C300E31EEF /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		3DF95EA31CDC422B00EFAE10 /* PhotoFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF95EA61CDC422B00EFAE10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				3DF95EA61CDC422B00EFAE10 /* AppDelegate.swift */,
 				3DF95EA81CDC422B00EFAE10 /* ViewController.swift */,
 				3D58DA331D0A278D00335B34 /* ImageFeedTableViewController.swift */,
+				3D58DA351D0A2E8C00335B34 /* ImageFeedItemTableViewCell.swift */,
 				3DF95EAA1CDC422B00EFAE10 /* Main.storyboard */,
 				3DF95EB01CDC422B00EFAE10 /* Assets.xcassets */,
 				3DF95EB21CDC422B00EFAE10 /* LaunchScreen.storyboard */,
@@ -270,6 +273,7 @@
 				3DF95EA91CDC422B00EFAE10 /* ViewController.swift in Sources */,
 				3DF95EA71CDC422B00EFAE10 /* AppDelegate.swift in Sources */,
 				3D58DA341D0A278D00335B34 /* ImageFeedTableViewController.swift in Sources */,
+				3D58DA361D0A2E8C00335B34 /* ImageFeedItemTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,10 +10,11 @@ import UIKit
 
 class ImageFeedTableViewController: UITableViewController {
 
-    let filters=[
-    "Red",
-    "Blue",
-    "Green" ]
+    var feed: Feed? {
+        didSet {
+            self.tableView.reloadData()
+        }
+    }
     
     // MARK: - Table view data source
 
@@ -24,15 +25,17 @@ class ImageFeedTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return filters.count
+        return self.feed?.items.count ?? 0
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("FilterCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("ImageFeedItemTableViewCell", forIndexPath: indexPath)
 
         // Configure the cell...
-        cell.textLabel?.text = filters[indexPath.row]
+        let item = self.feed!.items[indexPath.row]
+        cell.itemTitle.text = item.title
+
         return cell
     }
     
