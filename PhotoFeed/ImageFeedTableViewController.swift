@@ -15,7 +15,24 @@ class ImageFeedTableViewController: UITableViewController {
             self.tableView.reloadData()
         }
     }
+   
+    var urlSession: NSURLSession!
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
+        self.urlSession = NSURLSession(configuration: configuration)
+        
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.urlSession.invalidateAndCancel()
+        self.urlSession = nil
+    }
+    
+
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -35,6 +52,27 @@ class ImageFeedTableViewController: UITableViewController {
         // Configure the cell...
         let item = self.feed!.items[indexPath.row]
         cell.itemTitle.text = item.title
+        
+        
+        
+        let request = NSURLRequest(URL: item.imageURL)
+        
+        cell.dataTask = self.urlSession.dataTaskWithRequest(request) { (data, response, error) -> Void in
+            NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
+                if error == nil && data != nil {
+                    let image = UIImage(data: data!)
+                    cell.itemImageView.image = image
+                }
+            })
+            
+        }
+        
+        
+        
+        cell.dataTask?.resume()
+
+        
+        
         return cell
     }
     

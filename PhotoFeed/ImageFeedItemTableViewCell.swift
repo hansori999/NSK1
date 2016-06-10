@@ -15,6 +15,8 @@ class ImageFeedItemTableViewCell: UITableViewCell {
 
     @IBOutlet weak var itemTitle: UILabel!
     
+    weak var dataTask: NSURLSessionDataTask?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
