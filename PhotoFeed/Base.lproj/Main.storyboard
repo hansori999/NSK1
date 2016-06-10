@@ -60,7 +60,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageFeedItemTableViewCell" rowHeight="84" id="obZ-2F-JRU" customClass="FilterCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageFeedItemTableViewCell" rowHeight="84" id="obZ-2F-JRU" customClass="ImageFeedItemTableViewCell" customModule="PhotoFeed" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="600" height="84"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="obZ-2F-JRU" id="pz8-ap-GGS">
@@ -89,6 +89,10 @@
                                         <constraint firstItem="PeS-dj-wOz" firstAttribute="top" secondItem="pz8-ap-GGS" secondAttribute="topMargin" id="qBT-4t-oia"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="itemImageView" destination="79k-FZ-EY8" id="iqJ-IT-DUo"/>
+                                    <outlet property="itemTitle" destination="Q97-Rs-QU4" id="42T-N0-Fu3"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

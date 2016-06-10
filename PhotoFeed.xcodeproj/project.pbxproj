@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		3D58DA341D0A278D00335B34 /* ImageFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D58DA331D0A278D00335B34 /* ImageFeedTableViewController.swift */; };
 		3D58DA361D0A2E8C00335B34 /* ImageFeedItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D58DA351D0A2E8C00335B34 /* ImageFeedItemTableViewCell.swift */; };
+		3D7C6FB11D0A3313006FAA09 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7C6FB01D0A3313006FAA09 /* Feed.swift */; };
+		3D7C6FB31D0A34F3006FAA09 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7C6FB21D0A34F3006FAA09 /* FeedItem.swift */; };
+		3D7C6FB51D0A3F65006FAA09 /* photos_public.gne.js in Resources */ = {isa = PBXBuildFile; fileRef = 3D7C6FB41D0A3F65006FAA09 /* photos_public.gne.js */; };
 		3DDBFD8C1D07E3C300E31EEF /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3DDBFD8B1D07E3C300E31EEF /* Settings.bundle */; };
 		3DF95EA71CDC422B00EFAE10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF95EA61CDC422B00EFAE10 /* AppDelegate.swift */; };
 		3DF95EA91CDC422B00EFAE10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF95EA81CDC422B00EFAE10 /* ViewController.swift */; };
@@ -40,6 +43,9 @@
 /* Begin PBXFileReference section */
 		3D58DA331D0A278D00335B34 /* ImageFeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFeedTableViewController.swift; sourceTree = "<group>"; };
 		3D58DA351D0A2E8C00335B34 /* ImageFeedItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFeedItemTableViewCell.swift; sourceTree = "<group>"; };
+		3D7C6FB01D0A3313006FAA09 /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		3D7C6FB21D0A34F3006FAA09 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		3D7C6FB41D0A3F65006FAA09 /* photos_public.gne.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = photos_public.gne.js; sourceTree = "<group>"; };
 		3DDBFD8B1D07E3C300E31EEF /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		3DF95EA31CDC422B00EFAE10 /* PhotoFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF95EA61CDC422B00EFAE10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,9 +116,12 @@
 				3D58DA331D0A278D00335B34 /* ImageFeedTableViewController.swift */,
 				3D58DA351D0A2E8C00335B34 /* ImageFeedItemTableViewCell.swift */,
 				3DF95EAA1CDC422B00EFAE10 /* Main.storyboard */,
+				3D7C6FB01D0A3313006FAA09 /* Feed.swift */,
+				3D7C6FB21D0A34F3006FAA09 /* FeedItem.swift */,
 				3DF95EB01CDC422B00EFAE10 /* Assets.xcassets */,
 				3DF95EB21CDC422B00EFAE10 /* LaunchScreen.storyboard */,
 				3DF95EB51CDC422B00EFAE10 /* Info.plist */,
+				3D7C6FB41D0A3F65006FAA09 /* photos_public.gne.js */,
 				3DDBFD8B1D07E3C300E31EEF /* Settings.bundle */,
 				3DF95EAD1CDC422B00EFAE10 /* PhotoFeed.xcdatamodeld */,
 			);
@@ -245,6 +254,7 @@
 				3DF95EB41CDC422B00EFAE10 /* LaunchScreen.storyboard in Resources */,
 				3DF95EB11CDC422B00EFAE10 /* Assets.xcassets in Resources */,
 				3DF95EAC1CDC422B00EFAE10 /* Main.storyboard in Resources */,
+				3D7C6FB51D0A3F65006FAA09 /* photos_public.gne.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +280,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DF95EAF1CDC422B00EFAE10 /* PhotoFeed.xcdatamodeld in Sources */,
+				3D7C6FB11D0A3313006FAA09 /* Feed.swift in Sources */,
 				3DF95EA91CDC422B00EFAE10 /* ViewController.swift in Sources */,
 				3DF95EA71CDC422B00EFAE10 /* AppDelegate.swift in Sources */,
 				3D58DA341D0A278D00335B34 /* ImageFeedTableViewController.swift in Sources */,
+				3D7C6FB31D0A34F3006FAA09 /* FeedItem.swift in Sources */,
 				3D58DA361D0A2E8C00335B34 /* ImageFeedItemTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
