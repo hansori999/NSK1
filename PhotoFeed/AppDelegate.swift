@@ -44,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     }
 
-
+/*
     func updateFeed(url: NSURL, completion: (feed: Feed?) -> Void) {
         
         let dataFile = NSBundle.mainBundle().URLForResource("photos_public.gne", withExtension: ".js")!
@@ -56,6 +56,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         completion(feed: feed)
         
     }
+*/
+    
+    func updateFeed(url: NSURL, completion: (feed: Feed?) -> Void) {
+        let request = NSURLRequest(URL: url)
+        let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { (data, response, error) -> Void in
+            if error == nil && data != nil {
+                let feed = Feed(data: data!, sourceURL: url)
+                
+                NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
+                    completion(feed: feed)
+                })
+            }
+            
+        }
+        
+        task.resume()
+    }
 
+    
 }
 

@@ -76,6 +76,13 @@ class ImageFeedTableViewController: UITableViewController {
         return cell
     }
     
+    // Cancell Loading Cell Once obtained, Not for multiple accessing
+    override func tableView(tableView: UITableView, didEndDisplayingCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        if let cell = cell as? ImageFeedItemTableViewCell {
+            cell.dataTask?.cancel()
+        }
+    }
+    
 
 
 }
