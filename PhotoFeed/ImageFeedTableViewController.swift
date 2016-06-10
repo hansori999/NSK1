@@ -30,12 +30,11 @@ class ImageFeedTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("ImageFeedItemTableViewCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("ImageFeedItemTableViewCell", forIndexPath: indexPath) as! ImageFeedItemTableViewCell
 
         // Configure the cell...
         let item = self.feed!.items[indexPath.row]
         cell.itemTitle.text = item.title
-
         return cell
     }
     
