@@ -23,6 +23,7 @@ class Feed: NSObject, NSCoding {
     init (items newItems: [FeedItem], sourceURL newURL: NSURL) {
         self.items = newItems
         self.sourceURL = newURL
+        super.init()
     }
 
     func encodeWithCoder(aCoder: NSCoder) {
